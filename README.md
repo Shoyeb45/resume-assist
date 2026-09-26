@@ -1,2 +1,3 @@
-- A simple instruction built for efficiently optimizing and making a new resume as per the JD.
-- You just need to edit your data in [database](./resume_database.json) and run the [python script](./jd_maker.py) and paste in ur ai agent.
+- A simple setup built for efficiently optimizing and making a new resume as per the JD.
+- You just need to edit your data in [database](./resume_database.json) and run the [python script](./jd_maker.py) and paste in ur ai agent chatbox.
+- Within a minute or so, you will get tailored resume for JD.
