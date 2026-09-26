@@ -1,0 +1,250 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Resume Schema",
+  "type": "object",
+  "required": [
+    "info",
+    "experience",
+    "projects",
+    "skills"
+  ],
+  "properties": {
+    "info": {
+      "type": "object",
+      "required": [
+        "name",
+        "mobile_number",
+        "email",
+        "linkedin_username",
+        "github_username",
+        "location"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "mobile_number": {
+          "type": "object",
+          "required": [
+            "number",
+            "country_code"
+          ],
+          "properties": {
+            "number": {
+              "type": "string",
+              "pattern": "^[0-9]{10}$"
+            },
+            "country_code": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "linkedin_username": {
+          "type": "string"
+        },
+        "github_username": {
+          "type": "string"
+        },
+        "location": {
+          "type": "object",
+          "required": [
+            "city",
+            "state",
+            "country",
+            "pincode"
+          ],
+          "properties": {
+            "city": {
+              "type": "string"
+            },
+            "state": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "pincode": {
+              "type": "string",
+              "pattern": "^[0-9]{6}$"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "experience": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/experience"
+      }
+    },
+
+    "projects": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/project"
+      }
+    },
+
+    "skills": {
+      "$ref": "#/$defs/skills"
+    }
+  },
+
+  "$defs": {
+    "date": {
+      "type": "object",
+      "required": [
+        "month",
+        "year"
+      ],
+      "properties": {
+        "month": {
+          "type": "string",
+          "enum": [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+          ]
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 1900
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "experience": {
+      "type": "object",
+      "required": [
+        "company",
+        "start_date",
+        "end_date",
+        "role",
+        "location",
+        "points"
+      ],
+      "properties": {
+        "company": {
+          "type": "string"
+        },
+        "start_date": {
+          "$ref": "#/$defs/date"
+        },
+        "end_date": {
+          "$ref": "#/$defs/date"
+        },
+        "role": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "points": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "project": {
+      "type": "object",
+      "required": [
+        "title",
+        "github_url",
+        "tech_stack",
+        "points"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "github_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "tech_stack": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "live_website": {
+          "type": "string",
+          "format": "uri"
+        },
+        "points": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "skills": {
+      "type": "object",
+      "required": [
+        "programming_language",
+        "web",
+        "cloud",
+        "database",
+        "fundamentals",
+        "achievements"
+      ],
+      "properties": {
+        "programming_language": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "web": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "cloud": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "database": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "fundamentals": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "achievements": {
+          "$ref": "#/$defs/stringArray"
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "stringArray": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+
+  "additionalProperties": false
+}

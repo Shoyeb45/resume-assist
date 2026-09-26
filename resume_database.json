@@ -1,0 +1,197 @@
+{
+  "$schema": "./resume_database.schema.json",
+  "info": {
+    "name": "Shoyeb Ansari",
+    "mobile_number": {
+      "number": "9327156940",
+      "country_code": 91
+    },
+    "email": "shoyebff45@gmail.com",
+    "linkedin_username": "shoyebansari45",
+    "github_username": "shoyeb45",
+    "location": {
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "country": "India",
+      "pincode": "560066"
+    }
+  },
+  "experience": [
+    {
+      "company": "Flexype",
+      "start_date": {
+        "month": "February",
+        "year": 2026
+      },
+      "end_date": {
+        "month": "August",
+        "year": 2026
+      },
+      "role": "Software Development Intern",
+      "location": "Bengaluru, India",
+      "points": [
+        "Built a prepaid credit-based billing system covering balance management, usage-based deductions, payment gateway integration, daily reconciliation, invoicing, and automated notification workflows.",
+        "Designed and implemented a configurable rule-based upselling engine supporting cart/item triggers, customer segmentation, time-based expiry, discounts, and promotional constraints, contributing to a **10% increase in average order value (AOV)**.",
+        "Designed and implemented a versioned webhook delivery system for marketing automations, enabling backward-compatible payloads and extensible event integrations. Supporting 10k+ webhook delivery per day.",
+        "Built a reusable **Apollo GraphQL audit plugin** that tracked mutation authorship and computed field-level diffs between previous and updated entity state.",
+        "Designed an extensible notification delivery system using the **Factory pattern**, supporting WhatsApp, email, and in-dashboard notifications while simplifying addition of new delivery channels.",
+        "Integrated third-party **loyalty and Meta Lead Ads** services, including automated lead-to-WhatsApp workflows and external API failure handling."
+      ]
+    },
+    {
+      "company": "Physics Wallah",
+      "start_date": {
+        "month": "August",
+        "year": 2025
+      },
+      "end_date": {
+        "month": "February",
+        "year": 2026
+      },
+      "role": "Backend Intern",
+      "location": "Bengaluru, India",
+      "points": [
+        "Built and shipped an AI-powered Call Analyzer used in real time by Physics Wallah to audit counselling and sales calls, including audio ingestion, metadata handling, AI-driven analysis pipelines,and audit workflows",
+        "Designed and implemented a full-scale LMS serving 1000+ students, 80+ teachers, and 10+ admins across 6 centers, owning end-to-end database design, role-based access control, and core system architecture."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "IntelliResume: AI Resume Analyzer",
+      "github_url": "https://github.com/Shoyeb45/resume-analyzer",
+      "tech_stack": ["python-fastapi", "NextJS", "Typescript", "MongoDB"],
+      "live_website": "https://resume.pwioi.club/",
+      "points": [
+        "Developed an AI-powered Resume Analyzer that evaluates resumes against job descriptions, calculate ATS score, and provides actionable recommendations on skill gaps and improvements.",
+        "Built an interactive Resume Builder tool enabling users to generate professional resumes from scratch with customizable templates and real-time suggestions."
+      ]
+    },
+    {
+      "title": "AI-Native Interview System",
+      "github_url": "https://github.com/Shoyeb45/ai-interview",
+      "tech_stack": [
+        "Next.js",
+        "Express",
+        "Python (async)",
+        "WebSockets",
+        "WebRTC",
+        "Whisper",
+        "OpenAI",
+        "GCP TTS"
+      ],
+      "live_website": "https://ai-interview-zenith.vercel.app/",
+      "points": [
+        "Built a real-time AI interviewer with end-to-end speech pipeline (Whisper STT→ LLM→ TTS) overasync WebSockets, enabling low-latency voice-based interview interactions.",
+        "Designed a horizontally scalable interview engine (stateless WS servers, async processing) capable of handling 100+ concurrent sessions, producing structured evaluation signals for downstream review"
+      ]
+    },
+    {
+      "title": "Coding Platform",
+      "github_url": "https://github.com/Shoyeb45/coding-platform",
+      "tech_stack": [
+        "Typescript-ExpressJS",
+        "NextJS",
+        "Postgres",
+        "Redis",
+        "S3"
+      ],
+      "points": [
+        "Built a scalable coding contest platform with teacher dashboards, problem management, and user submissions.",
+        "Implemented a distributed code-execution workflow using Judge0 workers, Redis caching, and S3-based artifact storage supporting 250+ concurrent code execution",
+        "Deployed backend via Docker + AWS (EC2, Elastic Beanstalk) with CI/CD pipelines ensuring reliable contest operations"
+      ]
+    },
+    {
+      "title": "HTTP Server: C++",
+      "github_url": "https://github.com/Shoyeb45/http-server",
+      "tech_stack": ["C++", "Multithreading", "Networking", "Unix Sockets"],
+      "points": [
+        "Developed a high-performance HTTP server in C++ using raw TCP sockets and Unix system calls.",
+        "Implemented core HTTP features including gzip compression (zlib), dynamic routing, and binary-safe file I/O, demonstrating strong understanding of networking protocols, concurrency, and low-level system design."
+      ]
+    },
+    {
+      "title": "LAN Messanger: Real-Time Peer-to-Peer Chat Application",
+      "github_url": "https://github.com/Shoyeb45/lan-messenger-java-p2p-chat",
+      "tech_stack": [
+        "Java 17",
+        "JSwing",
+        "Socket Programming ",
+        "Multithreading",
+        "GSON"
+      ],
+      "points": [
+        "Developed a modular LAN messaging app in Java using Swing and JSON-based local storage, featuring SPA-like navigation, OOP structure, and real-time messaging over local networks.",
+        "Implemented TCP/UDP protocols for reliable real-time communication and auto user discovery, showcasing problem-solving skills and low-level systems understanding."
+      ]
+    },
+    {
+      "title": "AVL Tree Visualizer: JavaFX",
+      "github_url": "https://github.com/Shoyeb45/AVLTreeVisualizer",
+      "tech_stack": [
+        "Java 17", "JavaFX 22", "OOP", "Data Structures & Algorithms"
+      ],
+      "points": [
+        "Built an interactive AVL Tree Visualizer in JavaFX that demonstrates insertion, deletion, search, and all traversal techniques with real-time animations. Implemented self-balancing rotations(LL, RR, LR, RL).",
+        "Designed the project as a teaching aid for students to intuitively understand AVL Trees, improving clarity in learning complex data structures."
+      ]
+    },
+    {
+      "title": "AVL Tree Visualizer: JavaFX",
+      "github_url": "https://github.com/Shoyeb45/AVLTreeVisualizer",
+      "tech_stack": [
+        "Java 17", "JavaFX 22", "OOP", "Data Structures & Algorithms"
+      ],
+      "points": [
+        "Built an interactive AVL Tree Visualizer in JavaFX that demonstrates insertion, deletion, search, and all traversal techniques with real-time animations. Implemented self-balancing rotations(LL, RR, LR, RL).",
+        "Designed the project as a teaching aid for students to intuitively understand AVL Trees, improving clarity in learning complex data structures."
+      ]
+    },
+    {
+      "title": "Aether Lang",
+      "github_url": "https://github.com/Shoyeb45/aether-lang",
+      "tech_stack": [
+        "C++23", "CMake"
+      ],
+      "points": [
+        "Built a dynamically typed, tree-walking interpreter from scratch in C++23, implementing lexical analysis, recursive-descent parsing, AST evaluation, lexical scoping, and runtime error handling",
+        "Implemented advanced language features including first-class and higher-order functions, closures, classes, inheritance, method overriding, this/super, and native functions with a modular interpreter architecture"
+      ]
+    }
+
+  ],
+  "skills": {
+    "programming_language": [
+      "Typescript",
+      "Javascript",
+      "Python",
+      "Java",
+      "C++",
+      "C",
+      "Go",
+      "Rust"
+    ],
+    "web": ["Node.JS", "React.JS", "Express.JS", "Next.JS", "FastAPI", "Chi"],
+    "cloud": [
+      "EC2",
+      "Elastic Beanstalk",
+      "S3",
+      "CodePipeline",
+      "Codebuild",
+      "Auto Scaling Group"
+    ],
+    "database": ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
+    "fundamentals": [
+      "Operating System",
+      "Networking",
+      "Database",
+      "System Design"
+    ],
+    "achievements": [
+      "Ranked 2,998 in Meta Hacker Cup Round 1 (top 5%) and 2,700 in Round 2",
+      "Second Runner-Up at Rajasthan Police Hackathon 2024, a national hackathon, among 1,665 competing teams",
+      "Competitive Programming: Codeforces Pupil (max rating: 1255) | LeetCode max rating: 1813 (top 7.68%)"
+    ]
+  }
+}
