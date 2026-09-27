@@ -231,6 +231,9 @@
         "fundamentals": {
           "$ref": "#/$defs/stringArray"
         },
+        "ai_tools": {
+          "$ref": "#/$defs/stringArray"
+        },
         "achievements": {
           "$ref": "#/$defs/stringArray"
         }
