@@ -137,7 +137,6 @@
       "required": [
         "company",
         "start_date",
-        "end_date",
         "role",
         "location",
         "points"
@@ -150,7 +149,8 @@
           "$ref": "#/$defs/date"
         },
         "end_date": {
-          "$ref": "#/$defs/date"
+          "$ref": "#/$defs/date",
+          "description": "Omit for a current role (rendered as Present)."
         },
         "role": {
           "type": "string"
@@ -226,6 +226,15 @@
           "$ref": "#/$defs/stringArray"
         },
         "database": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "messaging": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "testing": {
+          "$ref": "#/$defs/stringArray"
+        },
+        "tooling": {
           "$ref": "#/$defs/stringArray"
         },
         "fundamentals": {

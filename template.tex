@@ -193,20 +193,28 @@
 
 \resumeSubHeadingListStart
 \resumeSubheading
-    {{FlexyPe}}{Bengaluru, India}
+    {{Spotter Labs}}{Remote}
+    {Full Stack Engineer}{August 2026 -- Present}
+    \resumeItemListStart
+    \item Optimized Mapbox map calculations, cutting \textbf{RAM usage from 1 GB+ to 200 MB}, and fixed crashes caused by re-rasterization of Mapbox stylesheets across map and satellite views.
+    \item Added a \textbf{satellite map view} to the core path-optimization map, keeping it \textbf{responsive} while rendering many layers, and delivered UX improvements across forms, tables, and modals.
+    \resumeItemListEnd
+
+\resumeSubheading
+    {{Flexype}}{Bengaluru, India}
     {Software Development Intern}{February 2026 -- August 2026}
     \resumeItemListStart
-    \item Developed a prepaid \textbf{credit-based billing system}. Implemented outstanding balances, usage-based deduction, and payment gateway integration, daily credit reconciliation, invoicing, and notification workflows.
-    \item Designed and implemented a configurable \textbf{rule-based upselling engine} with constraints on timing, discounts, and post-expiry behavior, improving flexibility of promotional workflows which led to 10\% increase in AOV.
-    \item Designed a \textbf{webhook delivery system} with versioned payloads for marketing automations. Added new events to increase the retention rate.
+    \item Built \textbf{React/Next.js dashboard UIs in TypeScript} for billing, upselling rule configuration, and in-dashboard notifications, using \textbf{React Query} and \textbf{Redux} for state management.
+    \item Designed an extensible notification delivery system using the \textbf{Factory pattern}, supporting WhatsApp, email, and in-dashboard channels while simplifying addition of new channels.
+    \item Designed a \textbf{versioned webhook delivery system} for marketing automations, supporting \textbf{10k+ deliveries per day}.
     \resumeItemListEnd
 
 \resumeSubheading
     {{Physics Wallah}}{Bengaluru, India}
-    {Backend Trainee}{August 2025 -- February 2026}
+    {Backend Intern}{August 2025 -- February 2026}
     \resumeItemListStart        
-        \item \textbf{Built and shipped an AI-powered Call Analyzer} used in real time by \textbf{Physics Wallah} to audit counselling and sales calls, including audio ingestion, metadata handling, AI-driven analysis pipelines, and audit workflows.
-        \item \textbf{Designed and implemented a full-scale LMS} serving \textbf{1000+ students, 80+ teachers, and 10+ admins} across \textbf{6 centers}, owning end-to-end database design, role-based access control, and core system architecture.
+        \item Built and shipped an \textbf{AI-powered Call Analyzer} used in real time to audit counselling and sales calls, covering audio ingestion, metadata handling, AI analysis pipelines, and audit workflows.
+        \item Designed and implemented a full-scale \textbf{LMS} serving \textbf{1000+ students, 80+ teachers, and 10+ admins} across \textbf{6 centers}, owning database design, role-based access control, and core architecture.
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 \vspace{-6mm}
@@ -220,20 +228,20 @@
 \resumeSubHeadingListStart
 
 \resumeProject
-  {IntelliResume: AI Resume Analyzer \href{https://github.com/Shoyeb45/resume-analyzer}{\footnotesize (Shoyeb45/resume-analyzer)}}
-  {Tech: [Python-Fastapi, NextJs-Typescript, MongoDB] \href{https://resume.pwioi.club/}{\footnotesize (Live Website)}}
+  {Coding Platform \href{https://github.com/Shoyeb45/coding-platform}{\footnotesize (Shoyeb45/coding-platform)}}
+  {Tech: [TypeScript-Express.js, Next.js, PostgreSQL, Redis, S3]}
   {} {}
 \resumeItemListStart
-  \item Developed an \textbf{AI-powered Resume Analyzer} that evaluates resumes against job descriptions, calculates ATS score, and provides actionable recommendations on skill gaps and improvements.
-  \item Built an \textbf{interactive Resume Builder tool} enabling users to generate professional resumes from scratch with customizable templates and real-time suggestions.
+  \item Implemented a \textbf{distributed code-execution workflow} using Judge0 workers, Redis caching, and \textbf{S3}-based artifact storage, supporting \textbf{250+ concurrent code executions}.
+  \item Deployed the backend via \textbf{Docker} and \textbf{AWS (EC2, Elastic Beanstalk)} with \textbf{CI/CD pipelines}, and built the Next.js frontend for teacher dashboards and submissions.
 \resumeItemListEnd
 \resumeProject
-  {AI-Native Interview System \href{https://github.com/Shoyeb45/ai-interview}{\footnotesize (Shoyeb45/ai-interview)}}
-  {Tech: [Next.js, Express, Python (async), WebSockets, WebRTC, Whisper, OpenAI, GCP TTS] \href{https://ai-interview-zenith.vercel.app/}{\footnotesize (Live Demo)}}
+  {IntelliResume: AI Resume Analyzer \href{https://github.com/Shoyeb45/resume-analyzer}{\footnotesize (Shoyeb45/resume-analyzer)}}
+  {Tech: [Python-FastAPI, Next.js, TypeScript, MongoDB] \href{https://resume.pwioi.club/}{\footnotesize (Live Website)}}
   {} {}
 \resumeItemListStart
-  \item Built a real-time AI interviewer with end-to-end speech pipeline (Whisper STT $\rightarrow$ LLM $\rightarrow$ TTS) over async WebSockets, enabling low-latency voice-based interview interactions.
-  \item Designed a horizontally scalable interview engine (stateless WS servers, async processing) capable of handling \textbf{100+ concurrent sessions}, producing structured evaluation signals for downstream review.
+  \item Developed an \textbf{AI-powered Resume Analyzer} that computes ATS scores against job descriptions and flags skill gaps.
+  \item Built the \textbf{Next.js and TypeScript frontend}, including an interactive \textbf{Resume Builder} with customizable templates and real-time suggestions.
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -259,20 +267,20 @@
 \section{\textbf{Skills}}
 \vspace{-0.4mm}
  \resumeHeadingSkillStart
-  \resumeSubItem{Programming: }
-    {C++, Rust, Typescript}
+  \resumeSubItem{Languages: }
+    {TypeScript, JavaScript, Python, Java}
     \vspace{1mm}
-  \resumeSubItem{Backend \& Web: }
-    {Node.js, Express.js, Next.js, React.js, Tokio}
+  \resumeSubItem{Frontend: }
+    {React.js, Next.js, React Query, Redux, HTML, CSS, Browser APIs}
     \vspace{1mm}
-  \resumeSubItem{Tools \& Systems: }
-    {Linux, Docker, Git, CI/CD}
+  \resumeSubItem{Backend \& Data: }
+    {Node.js, Express.js, FastAPI, PostgreSQL, MongoDB, Redis}
     \vspace{1mm}
-  \resumeSubItem{Cloud: }
-    {AWS (EC2, Elastic Beanstalk, S3, CodePipeline, CodeBuild, ASG)}
+  \resumeSubItem{Cloud \& DevOps: }
+    {AWS (S3, EC2, Elastic Beanstalk, CodePipeline, CodeBuild), Docker, CI/CD}
     \vspace{1mm}
-  \resumeSubItem{Databases: }
-    {PostgreSQL, MySQL, MongoDB, Redis}
+  \resumeSubItem{Testing \& Tooling: }
+    {Jest, Vite, ESLint}
  \resumeHeadingSkillEnd
 \vspace{-2mm}
 
@@ -302,7 +310,7 @@
 \vspace{-0.2mm}
 \resumeSubHeadingListStart
 \resumePOR{}{\textbf{Ranked 2,998} in Meta Hacker Cup Round 1 (top 5\%) and \textbf{2,700} in Round 2}{\textit{11/2025}}
-\resumePOR{}{\textbf{Second Runner-Up} at Rajasthan Police Hackathon 2024, a \textbf{national hackathon}, among 1,665 competing teams}{}
+\resumePOR{}{\textbf{Second Runner-Up} at Rajasthan Police Hackathon 2024, a \textbf{national hackathon}, among 1,665 teams}{}
 \resumePOR{}{\textbf{Competitive Programming}: Codeforces Pupil (max rating: 1255) | LeetCode max rating: 1813 (top 7.68\%)}{}
 \resumeSubHeadingListEnd
 \vspace{-6mm}

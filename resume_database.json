@@ -18,6 +18,21 @@
   },
   "experience": [
     {
+      "company": "Spotter Labs",
+      "start_date": {
+        "month": "August",
+        "year": 2026
+      },
+      "role": "Full Stack Engineer",
+      "location": "Remote",
+      "points": [
+        "Added a satellite map view to the core path-optimization map and made the map responsive while rendering many layers.",
+        "Optimized Mapbox map-related calculations, reducing RAM usage from 1 GB+ to 200 MB, and fixed crashes caused by re-rasterization of Mapbox stylesheets for the map and satellite views.",
+        "Added a new field to the large crm_lead module.",
+        "Delivered UX improvements across user forms, tables, and modals."
+      ]
+    },
+    {
       "company": "Flexype",
       "start_date": {
         "month": "February",
@@ -35,7 +50,8 @@
         "Designed and implemented a versioned webhook delivery system for marketing automations, enabling backward-compatible payloads and extensible event integrations. Supporting 10k+ webhook delivery per day.",
         "Built a reusable **Apollo GraphQL audit plugin** that tracked mutation authorship and computed field-level diffs between previous and updated entity state.",
         "Designed an extensible notification delivery system using the **Factory pattern**, supporting WhatsApp, email, and in-dashboard notifications while simplifying addition of new delivery channels.",
-        "Integrated third-party **loyalty and Meta Lead Ads** services, including automated lead-to-WhatsApp workflows and external API failure handling."
+        "Integrated third-party **loyalty and Meta Lead Ads** services, including automated lead-to-WhatsApp workflows and external API failure handling.",
+        "Built React/Next.js dashboard UIs in TypeScript for the billing system, upselling rule configuration, in-dashboard notifications, and other dashboard screens, using React Query and Redux for state management."
       ]
     },
     {
@@ -64,7 +80,8 @@
       "live_website": "https://resume.pwioi.club/",
       "points": [
         "Developed an AI-powered Resume Analyzer that evaluates resumes against job descriptions, calculate ATS score, and provides actionable recommendations on skill gaps and improvements.",
-        "Built an interactive Resume Builder tool enabling users to generate professional resumes from scratch with customizable templates and real-time suggestions."
+        "Built an interactive Resume Builder tool enabling users to generate professional resumes from scratch with customizable templates and real-time suggestions.",
+        "Built the Next.js and TypeScript frontend, including the interactive Resume Builder UI."
       ]
     },
     {
@@ -83,7 +100,8 @@
       "live_website": "https://ai-interview-zenith.vercel.app/",
       "points": [
         "Built a real-time AI interviewer with end-to-end speech pipeline (Whisper STT→ LLM→ TTS) overasync WebSockets, enabling low-latency voice-based interview interactions.",
-        "Designed a horizontally scalable interview engine (stateless WS servers, async processing) capable of handling 100+ concurrent sessions, producing structured evaluation signals for downstream review"
+        "Designed a horizontally scalable interview engine (stateless WS servers, async processing) capable of handling 100+ concurrent sessions, producing structured evaluation signals for downstream review",
+        "Built the Next.js interview UI for real-time voice-based interview sessions."
       ]
     },
     {
@@ -99,7 +117,8 @@
       "points": [
         "Built a scalable coding contest platform with teacher dashboards, problem management, and user submissions.",
         "Implemented a distributed code-execution workflow using Judge0 workers, Redis caching, and S3-based artifact storage supporting 250+ concurrent code execution",
-        "Deployed backend via Docker + AWS (EC2, Elastic Beanstalk) with CI/CD pipelines ensuring reliable contest operations"
+        "Deployed backend via Docker + AWS (EC2, Elastic Beanstalk) with CI/CD pipelines ensuring reliable contest operations",
+        "Built the Next.js frontend, including teacher dashboards, problem management pages, and submission views."
       ]
     },
     {
@@ -172,7 +191,7 @@
       "Go",
       "Rust"
     ],
-    "web": ["Node.JS", "React.JS", "Express.JS", "Next.JS", "FastAPI", "Chi"],
+    "web": ["Node.JS", "React.JS", "React Query", "Redux", "Express.JS", "Next.JS", "FastAPI", "Chi", "gRPC", "HTML", "CSS", "Browser APIs"],
     "cloud": [
       "EC2",
       "Elastic Beanstalk",
@@ -182,6 +201,9 @@
       "Auto Scaling Group"
     ],
     "database": ["PostgreSQL", "MySQL", "MongoDB", "Redis"],
+    "messaging": ["RabbitMQ"],
+    "testing": ["Jest"],
+    "tooling": ["Vite", "ESLint"],
     "fundamentals": [
       "Operating System",
       "Networking",
@@ -191,7 +213,7 @@
     "ai_tools": ["Cursor", "Claude Code", "Antigravity", "Agentic Coding"],
     "achievements": [
       "Ranked 2,998 in Meta Hacker Cup Round 1 (top 5%) and 2,700 in Round 2",
-      "Second Runner-Up at Rajasthan Police Hackathon 2024, a national hackathon, among 1,665 competing teams",
+      "Second Runner-Up at Rajasthan Police Hackathon 2024, a national hackathon, among 1,665 teams",
       "Competitive Programming: Codeforces Pupil (max rating: 1255) | LeetCode max rating: 1813 (top 7.68%)"
     ]
   }
